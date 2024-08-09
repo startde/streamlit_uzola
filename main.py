@@ -19,8 +19,7 @@ di_3.tolist()
 di_4.tolist()
 modules_mean = {"di_1":statistics.mean(di_1) , "di_3":statistics.mean(di_3), "di_4": statistics.mean(di_4) }
 #Создание bar chart
-#fig = plt.figure(figsize = (10, 5))
-fig, ax = plt.subplots()
+fig = plt.figure(figsize = (10, 5))
 plt.bar(list(modules_mean.keys()),
         list(modules_mean.values()),
         color ='green',
