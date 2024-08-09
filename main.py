@@ -124,7 +124,7 @@ if selected == "Дискретные входы":
             #chart_data = pd.DataFrame(np.random.randn(20, 3), columns=['a', 'b', 'c'])
             #st.area_chart(chart_data)
             st.dataframe(df)
-            st.pyplot(fig)
+            st.pyplot(fig.figure)
             st.markdown("На каждом модуле не было выявлено проблем при тестировании четырех входов одновременно. Небольшие погрешности появлялись при частоте 80 кГц")
     if option == "8 входов":
         st.header('Тестирование восьми входов одновременно')
