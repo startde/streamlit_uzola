@@ -10,7 +10,7 @@ from PIL import Image
 #data analytics
 
 #Тестирование 1-4
-df = pd.read_excel("signals1-4.xlsx", engine = 'openpyxl')
+df = pd.read_excel("data/signals1-4.xlsx", engine = 'openpyxl')
 table_1 = df['Отклонение от заданного числа импульсов в %']
 arr = np.array_split(table_1, 3)
 di_1,di_3,di_4 = arr[0], arr[1], arr[2]
