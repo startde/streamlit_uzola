@@ -10,7 +10,7 @@ from PIL import Image
 #data analytics
 
 #Тестирование 1-4
-df = pd.read_excel("data\signals1-4.xlsx", engine = 'openpyxl')
+df = pd.read_excel("data/signals1-4.xlsx", engine = 'openpyxl')
 table_1 = df['Отклонение от заданного числа импульсов в %']
 arr = np.array_split(table_1, 3)
 di_1,di_3,di_4 = arr[0], arr[1], arr[2]
@@ -27,7 +27,7 @@ plt.bar(list(modules_mean.keys()),
 plt.title ("Среднее отклонение по модулям в %")
 
 #Тестирование 8
-df_2 = pd.read_excel("data\signals8.xlsx", engine = 'openpyxl')
+df_2 = pd.read_excel("data/signals8.xlsx", engine = 'openpyxl')
 table_2 = df_2['Отклонение от заданного числа импульсов в %']
 arr_2 = np.array_split(table_2, 2)
 di_1_2,di_3_2= arr_2[0], arr_2[1]
@@ -43,7 +43,7 @@ plt.bar(list(modules_mean_2.keys()),
 plt.title ("Среднее отклонение по модулям в %")
 
 #Тестирование 12
-df_3 = pd.read_excel("data\signals12.xlsx", engine = 'openpyxl')
+df_3 = pd.read_excel("data/signals12.xlsx", engine = 'openpyxl')
 table_3 = df_3['Отклонение от заданного числа импульсов в %']
 arr_3 = np.array_split(table_3, 3)
 di_1_3, di_3_3, di_4_3 = arr_3[0], arr_3[1], arr_3[2]
@@ -60,7 +60,7 @@ plt.bar(list(modules_mean_3.keys()),
 plt.title ("Среднее отклонение по модулям в %")
 
 #Тестирование 16
-df_4 = pd.read_excel("data\signals16.xlsx", engine = 'openpyxl')
+df_4 = pd.read_excel("data/signals16.xlsx", engine = 'openpyxl')
 table_4 = df_4['Отклонение от заданного числа импульсов в %']
 arr_4 = np.array_split(table_4, 2)
 arr_4_2 = np.array_split(arr_4[1], 2)
@@ -78,15 +78,15 @@ plt.bar(list(modules_mean_4.keys()),
 plt.title ("Среднее отклонение по модулям в %")
 
 #Добавление скриншотов
-image_1 = Image.open("data\di_1.png")
-image_2 = Image.open(r"C:\Users\guest_dit\Pictures\di_2.png")
-image_3 = Image.open(r"C:\Users\guest_dit\Pictures\di_2_1.png")
-image_4 = Image.open(r"C:\Users\guest_dit\Pictures\di_3.png")
-image_5 = Image.open(r"C:\Users\guest_dit\Pictures\di_4.png")
-image_6 = Image.open(r"C:\Users\guest_dit\Pictures\di_5.png")
-image_7 = Image.open(r"C:\Users\guest_dit\Pictures\ai_1.png")
-image_8 = Image.open(r"C:\Users\guest_dit\Pictures\ai_2.png")
-image_9 = Image.open(r"C:\Users\guest_dit\Pictures\ro_1.png")
+image_1 = Image.open("data/di_1.png")
+image_2 = Image.open("data/di_2.png")
+image_3 = Image.open("data/di_2_1.png")
+image_4 = Image.open("data/di_3.png")
+image_5 = Image.open("data/di_4.png")
+image_6 = Image.open("data/di_5.png")
+image_7 = Image.open("data/ai_1.png")
+image_8 = Image.open("data/ai_2.png")
+image_9 = Image.open("data/ro_1.png")
 
 #Блок streamlit
 st.title ("Отчет о тестировании контроллера UZOLA PRO100")
