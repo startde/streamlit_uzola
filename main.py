@@ -33,7 +33,7 @@ arr_2 = np.array_split(table_2, 2)
 di_1_2,di_3_2= arr_2[0], arr_2[1]
 di_1_2.tolist()
 di_3_2.tolist()
-modules_mean_2 = {"di_2":statistics.mean(di_1_2), "di_3":statistics.mean(di_3_2) }
+modules_mean_2 = {"di_1":statistics.mean(di_1_2), "di_3":statistics.mean(di_3_2) }
 #Создание bar chart
 fig_2 = plt.figure(figsize = (10, 5))
 plt.bar(list(modules_mean_2.keys()),
