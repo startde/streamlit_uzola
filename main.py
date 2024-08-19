@@ -87,8 +87,8 @@ image_6 = Image.open("data/di_5.png")
 image_7 = Image.open("data/ai_1.png")
 image_8 = Image.open("data/ai_2.png")
 image_9 = Image.open("data/ro_1.png")
-image_10 = Image.open("data/axiscada_1")
-image_11 = Image.open("data/codesys_modbus")
+image_10 = Image.open("data/axiscada_1.png")
+image_11 = Image.open("data/codesys_modbus.png")
 #Блок streamlit
 st.title ("Отчет о тестировании контроллера UZOLA PRO100")
 with st.sidebar:
