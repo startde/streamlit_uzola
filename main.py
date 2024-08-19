@@ -212,7 +212,7 @@ if selected == "Релейные выходы":
     st.image(image_9, caption = "Ошибка чтения модуля")
 if selected == "Совместимость с AxiScada":
     st.header("Тестирование совместимости с AxiScada")
-    st.markdown ("Была протестирована связь с AxiScada по протоколу Modbus.
+    st.markdown ("Была протестирована связь с AxiScada по протоколу Modbus.")
     st.markdown("Максимальная частота опроса – 1 с.")
     st.markdown("Данные передаются без задержек. Можно записать значения с панели в контроллер. Ошибок не было обнаружено.")    
     st.image (image_10, caption = "Тест совместимости с AxiScada")
